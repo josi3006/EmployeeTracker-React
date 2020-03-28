@@ -1,27 +1,25 @@
 import React, { Component } from "react";
 import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import Table from "./components/Table";
 import employees from "./employees.json";
 import Navbar from "./components/Navbar";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.employees to the employees json array
   state = {
     employees
   };
 
  
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.employeess and render an EmployeeCard component for each employee object
   render() {
     return (
       <>
       <Navbar></Navbar>
 
       <Wrapper>
-        <Title>Employee List</Title>
         <Table>
         {this.state.employees.map(employee => (
           <EmployeeCard
