@@ -1,87 +1,164 @@
 [
     {
       "id": 1,
-      "name": "Laine Sims",
-      "role": "CEO",
-      "department": "Administration",
-      "location": "Penthouse"
+      "name": "Bilbo Baggins",
+      "role": "Burgler",
+      "department": "Acquisitions",
+      "location": "Shire"
     },
     {
       "id": 2,
-      "name": "John Sims",
-      "role": "Vice President",
+      "name": "Gandolf the Grey",
+      "role": "Lead Consultant",
       "department": "Administration",
-      "location": "Sub-Basement"
+      "location": "Lorien"
     },
     {
       "id": 3,
-      "name": "Ellie Sims",
-      "role": "Creative Director",
-      "department": "Marketing",
-      "location": "Office 201"
+      "name": "Thorin Oakenshield",
+      "role": "Team Lead",
+      "department": "Administration",
+      "location": "Erebor"
     },
     {
       "id": 4,
-      "name": "Mary Sims",
-      "role": "Maintenance Supervisor",
-      "department": "Facilities",
-      "location": "Work Shed, Bay 1"
+      "name": "Aragorn",
+      "role": "Team Lead",
+      "department": "Administration",
+      "location": "Minas Tirith"
     },
     {
       "id": 5,
-      "name": "Kirby Sims",
-      "role": "HR Manager",
+      "name": "Elrond",
+      "role": "HR Supervisor",
       "department": "Human Resources",
-      "location": "Office 202"
+      "location": "Rivendell"
     },
     {
       "id": 6,
-      "name": "Khaki Sims",
-      "role": "Grounds Keeper",
-      "department": "Facilities",
-      "location": "Work Shed, Bay 2"
+      "name": "Frodo Baggins",
+      "role": "Intern",
+      "department": "Operations",
+      "location": "Shire"
     },
     {
       "id": 7,
-      "name": "Guinness Sims",
-      "role": "Morale Manager",
-      "department": "Human Resources",
-      "location": "Office 202"
+      "name": "Samwise Gamgee",
+      "role": "Intern",
+      "department": "Operations",
+      "location": "Shire"
     },
     {
       "id": 8,
-      "name": "Skip Sims",
-      "role": "Founder",
+      "name": "Galadriel",
+      "role": "Consultant",
       "department": "Administration",
-      "location": "Out to Pasture"
+      "location": "Lothlorien"
     },
     {
       "id": 9,
-      "name": "Carol Sims",
-      "role": "Sales Manager",
+      "name": "Arwen",
+      "role": "Consultant",
       "department": "Marketing",
-      "location": "Office 201"
+      "location": "Minas Tirith"
     },
     {
       "id": 10,
-      "name": "Mandy Finstad",
-      "role": "Communications Director",
-      "department": "Marketing",
-      "location": "Office 201"
+      "name": "Bard",
+      "role": "Archer",
+      "department": "Operations",
+      "location": "Esgaroth"
     },
     {
       "id": 11,
-      "name": "Jean Finstad",
-      "role": "Maintenance Worker",
-      "department": "Facilities",
-      "location": "Work Shed, Bay 3"
+      "name": "Beorn",
+      "role": "Animal Handler",
+      "department": "Operations",
+      "location": "Beorn's Hall"
     },
     {
       "id": 12,
-      "name": "Grimm Finstad",
-      "role": "Security Guard",
-      "department": "Facilities",
-      "location": "Lobby"
+      "name": "Balin",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 13,
+      "name": "Dwalin",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 14,
+      "name": "Dori",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 15,
+      "name": "Nori",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 16,
+      "name": "Oin",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 17,
+      "name": "Ori",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 18,
+      "name": "Gloin",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 19,
+      "name": "kili",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 20,
+      "name": "Fili",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 21,
+      "name": "Bifur",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 22,
+      "name": "Bofur",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
+    },
+    {
+      "id": 23,
+      "name": "Bombur",
+      "role": "Porter",
+      "department": "Operations",
+      "location": "Erebor"
     }
   ]
   
