@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Table from "./components/Table";
 import employees from "./employees.json";
+import Navbar from "./components/Navbar";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -16,6 +17,9 @@ class App extends Component {
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
+      <>
+      <Navbar></Navbar>
+
       <Wrapper>
         <Title>Employee List</Title>
         <Table>
@@ -31,6 +35,7 @@ class App extends Component {
         ))}
         </Table>
       </Wrapper>
+      </>
     );
   }
 }
