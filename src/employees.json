@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Laine Sims",
+      "role": "CEO",
+      "department": "Administration",
+      "location": "Penthouse"
+    },
+    {
+      "id": 2,
+      "name": "John Sims",
+      "role": "Vice President",
+      "department": "Administration",
+      "location": "Sub-Basement"
+    },
+    {
+      "id": 3,
+      "name": "Ellie Sims",
+      "role": "Creative Director",
+      "department": "Marketing",
+      "location": "Office 201"
+    },
+    {
+      "id": 4,
+      "name": "Mary Sims",
+      "role": "Maintenance Supervisor",
+      "department": "Facilities",
+      "location": "Work Shed, Bay 1"
+    },
+    {
+      "id": 5,
+      "name": "Kirby Sims",
+      "role": "HR Manager",
+      "department": "Human Resources",
+      "location": "Office 202"
+    },
+    {
+      "id": 6,
+      "name": "Khaki Sims",
+      "role": "Grounds Keeper",
+      "department": "Facilities",
+      "location": "Work Shed, Bay 2"
+    },
+    {
+      "id": 7,
+      "name": "Guinness Sims",
+      "role": "Morale Manager",
+      "department": "Human Resources",
+      "location": "Office 202"
+    },
+    {
+      "id": 8,
+      "name": "Skip Sims",
+      "role": "Founder",
+      "department": "Administration",
+      "location": "Out to Pasture"
+    },
+    {
+      "id": 9,
+      "name": "Carol Sims",
+      "role": "Sales Manager",
+      "department": "Marketing",
+      "location": "Office 201"
+    },
+    {
+      "id": 10,
+      "name": "Mandy Finstad",
+      "role": "Communications Director",
+      "department": "Marketing",
+      "location": "Office 201"
+    },
+    {
+      "id": 11,
+      "name": "Jean Finstad",
+      "role": "Maintenance Worker",
+      "department": "Facilities",
+      "location": "Work Shed, Bay 3"
+    },
+    {
+      "id": 12,
+      "name": "Grimm Finstad",
+      "role": "Security Guard",
+      "department": "Facilities",
+      "location": "Lobby"
+    }
+  ]
+  
