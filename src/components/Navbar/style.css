@@ -3,13 +3,14 @@
     color: #FFFFCC;
   }
 
- .srchBtn {
+ .clearBtn {
     background: #FFFFCC;
     color: #333300;
  }
 
  .form-control {
     color: #333300;
+    max-width: 160px;
  }
 
 

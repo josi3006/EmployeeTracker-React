@@ -6,7 +6,10 @@ import employees from "./employees.json";
 import Navbar from "./components/Navbar";
 
 class App extends Component {
-  // Setting this.state.employees to the employees json array
+
+
+  //Sets state to empty arrays
+
   state = {
 
     sorted: [],
@@ -14,12 +17,16 @@ class App extends Component {
 
   };
 
+
+
+  // Sets initial state using array of employees
+
   componentDidMount() {
     this.setState({ sorted: employees, filtered: employees })
   };
 
 
-
+  // Functions to sort by button click
 
   nameSort = () => {
     const emplArr = this.state.sorted;
@@ -50,24 +57,48 @@ class App extends Component {
   }
 
 
-  empSearch = (searchName) => {
-    const sorted = this.state.sorted;
-    const filtered = sorted.filter((employee) => {
-      const name = employee.name;
-      return name.toLowerCase().includes(searchName.toLowerCase());
+  // Handles onChange event at search bar input
+
+  searchInput = (event) => {
+    const res = this.empSearch(event.target.value);
+    this.setState({
+      filtered: res
     })
-    return filtered;
+  }
+
+  // Function to search by employee name
+
+  empSearch = (searchText) => {
+    const emplArr = this.state.sorted;
+    const filteredResults = emplArr.filter((employee) => {
+      const fullName = employee.name;
+      return fullName.toLowerCase().includes(searchText.toLowerCase());
+    })
+
+    this.setState({ filtered: filteredResults });
+
+    return filteredResults;
+  }
+
+
+  clearAll = () => {
+
+    console.log('You clicked me!');
+
+    window.location.reload(false);
+
+
   }
 
 
 
-
-
-  // Map over this.state.employees and render an EmployeeCard component for each employee object
   render() {
     return (
       <>
-        <Navbar></Navbar>
+        <Navbar
+          searchInput={this.searchInput}
+          clearAll={this.clearAll}>
+        </Navbar>
 
         <Wrapper>
           <Table
@@ -78,7 +109,7 @@ class App extends Component {
           >
 
 
-            {this.state.sorted.map(employee => (
+            {this.state.filtered.map(employee => (
 
               <EmployeeCard
                 id={employee.id}
@@ -88,18 +119,6 @@ class App extends Component {
                 department={employee.department}
                 location={employee.location}
               />
-
-
-              /* {this.state.sorted.map(employee => (
-   
-                 <EmployeeCard
-                   id={employee.id}
-                   key={employee.id}
-                   name={employee.name}
-                   role={employee.role}
-                   department={employee.department}
-                   location={employee.location}
-                 /> */
 
 
             ))

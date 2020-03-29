@@ -2,29 +2,46 @@ import React from "react";
 import "./style.css";
 
 
-function Navbar() {
+function Navbar(props) {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg fixed-top">
-                <a className="navbar-brand" href="/">Employee Directory</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+            <div className="container">
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
+                <nav className="navbar navbar-expand-sm fixed-top">
+                    <a className="navbar-brand" href="/">Middle Earth, Inc. - Employee Directory</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
 
-                       
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
+                        </ul>
 
 
-                    </ul>
-                    <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="search" placeholder="Search by name" aria-label="Search" />
-                        <button className="btn srchBtn my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
+
+
+                        <form className="searchForm">
+                            <div>
+                                <label className="sr-only" for="inputName">Name</label>
+                                <div className="input-group">
+
+                                    <input type="text" className="form-control" id="inputName" placeholder="Search by Name" onChange={props.searchInput} />
+                                    <div className="input-group-append">
+                                        <div className="clearBtn input-group-text" onClick={props.clearAll}>Clear</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+
+
+                </nav>
+            </div>
+        </div >
     );
 }
 
