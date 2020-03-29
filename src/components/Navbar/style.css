@@ -1,0 +1,30 @@
+.navbar {  
+    background:  #996633;
+    color: #FFFFCC;
+  }
+
+ .srchBtn {
+    background: #FFFFCC;
+    color: #333300;
+ }
+
+ .form-control {
+    color: #333300;
+ }
+
+
+a:link {
+    color: #FFFFCC;
+  }
+  
+  a:visited {
+    color: #FFFFCC;
+  }
+  
+  a:hover {
+    color: #333300;
+  }
+  
+  a:active {
+    color: #333300;
+  } 
