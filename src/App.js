@@ -21,20 +21,32 @@ class App extends Component {
 
 
 
-  empSort = sortBy => {
+  nameSort = () => {
+    const emplArr = this.state.sorted;
+    const sortedArr = emplArr.sort((a, b) => a.name.localeCompare(b.name));
+    this.setState({ sorted: sortedArr });
+    return sortedArr;
+  }
 
-    console.log('sortBy parameter: ', sortBy);
-
+  roleSort = () => {
     const emplArr = this.state.sorted;
     const sortedArr = emplArr.sort((a, b) => a.role.localeCompare(b.role));
-
-    console.log('sortedArr ', sortedArr);
-
-    this.setState({sorted: sortedArr});
-
+    this.setState({ sorted: sortedArr });
     return sortedArr;
+  }
 
+  deptSort = () => {
+    const emplArr = this.state.sorted;
+    const sortedArr = emplArr.sort((a, b) => a.department.localeCompare(b.department));
+    this.setState({ sorted: sortedArr });
+    return sortedArr;
+  }
 
+  locSort = () => {
+    const emplArr = this.state.sorted;
+    const sortedArr = emplArr.sort((a, b) => a.location.localeCompare(b.location));
+    this.setState({ sorted: sortedArr });
+    return sortedArr;
   }
 
 
@@ -58,22 +70,15 @@ class App extends Component {
         <Navbar></Navbar>
 
         <Wrapper>
-          <Table empSort={this.empSort}>
+          <Table
+            nameSort={this.nameSort}
+            roleSort={this.roleSort}
+            deptSort={this.deptSort}
+            locSort={this.locSort}
+          >
 
 
-          {this.state.sorted.map(employee => (
-
-<EmployeeCard
-  id={employee.id}
-  key={employee.id}
-  name={employee.name}
-  role={employee.role}
-  department={employee.department}
-  location={employee.location}
-/>
-
-
-           /* {this.state.sorted.map(employee => (
+            {this.state.sorted.map(employee => (
 
               <EmployeeCard
                 id={employee.id}
@@ -82,7 +87,19 @@ class App extends Component {
                 role={employee.role}
                 department={employee.department}
                 location={employee.location}
-              /> */
+              />
+
+
+              /* {this.state.sorted.map(employee => (
+   
+                 <EmployeeCard
+                   id={employee.id}
+                   key={employee.id}
+                   name={employee.name}
+                   role={employee.role}
+                   department={employee.department}
+                   location={employee.location}
+                 /> */
 
 
             ))
